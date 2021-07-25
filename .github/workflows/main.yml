@@ -6,4 +6,6 @@ jobs:
     steps:
       - name: Test1
         run: |
-          echo "This is my test code"
+          echo $MY_SECRETS
+        env:
+          MY_SECRETS: ${{ secretes.PRABIN }}
