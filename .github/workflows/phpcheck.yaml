@@ -1,8 +1,7 @@
-
-name: "phpcs"
+name: "CI"
 
 on:
-  push:
+  pull_request:
     paths:
       - "**.php"
       - "phpcs.xml"
@@ -28,10 +27,3 @@ jobs:
           files: "**.php" # you may customize glob as needed
           phpcs_path: php phpcs.phar
           standard: phpcs.xml
-
-
- 
-
-
-
-
