@@ -1,0 +1,9 @@
+name: this is a exmaple file
+on: push
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test1
+        run: |
+          echo "This is my test code"
